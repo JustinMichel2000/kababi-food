@@ -1,14 +1,31 @@
-button{
-    background-color: $--gold;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 25px;
-    margin-top: 25px;
+.book{
     
+     button{
+     background-color: $--gold;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     padding: 20px 40px;
+     margin-top: 35px;
+     font-size: 1.2rem;
+     
+         img{
+             width: 10px;
+             height: 10px;
+             filter: invert(100%);
+         }
+    }
+}
+
+.explore{
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+
     img{
         width: 10px;
         height: 10px;
