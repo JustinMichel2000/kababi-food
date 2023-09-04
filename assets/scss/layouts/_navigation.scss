@@ -1,0 +1,44 @@
+.menu{
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        li{
+            
+            a{
+                text-decoration: none;
+
+                &:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .submenu-home, .submenu-page, .submenu-shop{
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+        }
+
+        .home-menu{
+            &:hover ~ .submenu-home{
+                opacity: 1;
+            }
+        }
+
+        .page-menu{
+            &:hover ~ .submenu-page{
+                opacity: 1;
+            }
+        }
+
+        .shop-menu{
+            &:hover ~ .submenu-shop{
+                opacity: 1;
+            }
+        }
+    }
+
+}

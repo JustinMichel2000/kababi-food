@@ -1,0 +1,12 @@
+.phone{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+
+    .phone-img{
+        width: 25px;
+        height: 25px;
+        transform: scaleX(-1);
+    }
+
+}
