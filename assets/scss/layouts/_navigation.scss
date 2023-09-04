@@ -1,12 +1,18 @@
 .menu{
 
-    ul{
+    .large-menu{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         list-style: none;
 
+        
         li{
-            
+            padding: 2rem 2rem;
+            display: inline-block;
+            overflow: hidden;
+
             a{
                 text-decoration: none;
 
