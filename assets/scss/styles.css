@@ -19,8 +19,10 @@
 .explore {
   background-color: transparent;
   color: white;
-  padding: 20px;
+  padding: 20px 45px;
   font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 4px;
 }
 .explore img {
   width: 10px;
@@ -104,12 +106,20 @@ header {
   transform: translateY(10px);
 }
 
-.quality .img-quality {
-  width: 200px;
-  height: 200px;
+.quality {
+  margin-top: 25vh;
+  padding: 0 9rem;
 }
-
-h1 {
+.quality .img-quality {
+  position: absolute;
+  top: 15%;
+  left: 34%;
+  width: 130px;
+  height: 130px;
+}
+.quality h1 {
   color: white;
   font-size: 100px;
+  max-width: 33%;
+  margin-bottom: 2rem;
 }

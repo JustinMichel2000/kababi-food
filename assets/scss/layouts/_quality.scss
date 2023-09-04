@@ -1,14 +1,18 @@
 .quality{
-    
+    margin-top: 25vh;
+    padding: 0 9rem;
 
     .img-quality{
-        width: 200px;
-        height: 200px;
-        // float: right;
-        // margin: 5px;
+        position: absolute;
+        top: 15%;
+        left: 34%;
+        width: 130px;
+        height: 130px;
     }
-}
     h1{
         color: white;
         font-size: 100px;
+        max-width: 33%;
+        margin-bottom: 2rem;
     }
+}
