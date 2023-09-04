@@ -4,15 +4,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         list-style: none;
         margin-top: 25px;
 
+        .small-menu {
+            padding: 2rem 2rem;
+            position: relative;
+        }
         
         li{
-            padding: 2rem 2rem;
             display: inline-block;
-
 
             a{
                 text-decoration: none;
@@ -32,24 +34,42 @@
         .submenu-home, .submenu-page, .submenu-shop{
             display: flex;
             flex-direction: column;
-            opacity: 0;
-        }
+            align-items: start;
+            justify-content: start;
+            display: none;
+            position: absolute;
+            top: 9vh;
+            left: 0;
 
-        .home-menu{
-            &:hover ~ .submenu-home{
-                opacity: 1;
+            li {
+                padding: 0.6rem;
+                background-color: $--gold;
+
+                &:hover {
+                    filter: brightness(90%);
+                }
+                
+                a:hover {
+                    color: white;
+                }
             }
         }
 
-        .page-menu{
-            &:hover ~ .submenu-page{
-                opacity: 1;
+        .home-menu a{
+            &:focus ~ .submenu-home{
+                display: flex;
             }
         }
 
-        .shop-menu{
-            &:hover ~ .submenu-shop{
-                opacity: 1;
+        .page-menu a{
+            &:focus ~ .submenu-page{
+                display: flex;
+            }
+        }
+
+        .shop-menu a{
+            &:focus ~ .submenu-shop{
+                display: flex;
             }
         }
     }

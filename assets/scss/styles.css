@@ -59,12 +59,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   list-style: none;
   margin-top: 25px;
 }
-.menu .large-menu li {
+.menu .large-menu .small-menu {
   padding: 2rem 2rem;
+  position: relative;
+}
+.menu .large-menu li {
   display: inline-block;
 }
 .menu .large-menu li a {
@@ -81,16 +84,31 @@ header {
 .menu .large-menu .submenu-home, .menu .large-menu .submenu-page, .menu .large-menu .submenu-shop {
   display: flex;
   flex-direction: column;
-  opacity: 0;
+  align-items: start;
+  justify-content: start;
+  display: none;
+  position: absolute;
+  top: 9vh;
+  left: 0;
 }
-.menu .large-menu .home-menu:hover ~ .submenu-home {
-  opacity: 1;
+.menu .large-menu .submenu-home li, .menu .large-menu .submenu-page li, .menu .large-menu .submenu-shop li {
+  padding: 0.6rem;
+  background-color: #C8A96A;
 }
-.menu .large-menu .page-menu:hover ~ .submenu-page {
-  opacity: 1;
+.menu .large-menu .submenu-home li:hover, .menu .large-menu .submenu-page li:hover, .menu .large-menu .submenu-shop li:hover {
+  filter: brightness(90%);
 }
-.menu .large-menu .shop-menu:hover ~ .submenu-shop {
-  opacity: 1;
+.menu .large-menu .submenu-home li a:hover, .menu .large-menu .submenu-page li a:hover, .menu .large-menu .submenu-shop li a:hover {
+  color: white;
+}
+.menu .large-menu .home-menu a:focus ~ .submenu-home {
+  display: flex;
+}
+.menu .large-menu .page-menu a:focus ~ .submenu-page {
+  display: flex;
+}
+.menu .large-menu .shop-menu a:focus ~ .submenu-shop {
+  display: flex;
 }
 
 .phone {
