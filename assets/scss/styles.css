@@ -141,6 +141,59 @@ header {
   height: auto;
 }
 
+.category {
+  background-color: #F9F5EF;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.category h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.categorysub {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.categories {
+  display: flex;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  row-gap: 2%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.category-part {
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  height: 170px;
+  width: 150px;
+}
+
+.category-part:hover {
+  background-color: #C8A96A;
+}
+
+.food2 {
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .menu .large-menu {
   display: flex;
   flex-direction: row;
@@ -297,6 +350,93 @@ header {
   height: 400px;
 }
 
+.about-us {
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.espaceh2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.about-sub {
+  text-align: center;
+}
+.about-sub img {
+  position: absolute;
+  right: 5%;
+  bottom: -47%;
+  width: 95px;
+  height: 95px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+}
+.about img {
+  width: 33%;
+  height: 33%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  gap: 70px;
+  margin-left: 20%;
+}
+
+.about-content img {
+  max-width: 50%;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  -moz-column-count: 1;
+       column-count: 1;
+  margin-right: 30%;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.about-text p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.discover {
+  background-color: #C8A96A;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  margin-top: 35px;
+  font-size: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.discover img {
+  width: 10px;
+  height: 10px;
+  filter: invert(100%);
+}
+.discover:hover {
+  transform: scale(0.9);
+
 .offer {
   margin-top: 120px;
   background-color: #F9F5EF;
@@ -407,4 +547,5 @@ header {
 .gallery .photos img:hover {
   background-color: black;
   opacity: 70%;
+
 }/*# sourceMappingURL=styles.css.map */
