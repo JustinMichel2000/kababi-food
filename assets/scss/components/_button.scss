@@ -1,0 +1,46 @@
+.book{
+    
+     button{
+     background-color: $--gold;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     padding: 20px 40px;
+     margin-top: 35px;
+     font-size: 1.2rem;
+     transition: all 0.3s ease-in-out;
+     
+         img{
+             width: 10px;
+             height: 10px;
+             filter: invert(100%);
+         }
+         
+         &:hover{
+            transform: scale(0.9);
+         }
+    }
+}
+
+.explore{
+    background-color: transparent;
+    color: white;
+    padding: 20px 45px;
+    font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+
+    img{
+        width: 10px;
+        height: 10px;
+        filter: invert(100%);
+    }
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
