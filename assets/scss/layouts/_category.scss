@@ -1,11 +1,16 @@
 .category{
-    background-color: $--bg-beige; 
+  
+    background-image: url("/assets/storage/background-2.jpg");
+    background-color: $--bg-beige;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh ;
     width: 100%;
+    height: 100vh;
     margin-top: 100vh;
     position: relative;   
     z-index: 1;
+  
 
     h1{
         font-size: 180px;
@@ -16,6 +21,7 @@
         margin-top: 40px;
         margin-left: 20px;
     }
+  
 }
 
 .categorysub{

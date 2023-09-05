@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +53,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "EB Garamond", serif;
+}
+
 .book button {
   background-color: #C8A96A;
   border: none;
@@ -90,6 +95,25 @@ table {
 }
 .explore:hover {
   transform: scale(0.9);
+}
+
+.view {
+  background-color: white;
+  color: black;
+  font-style: bold;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  margin-top: 35px;
+  font-size: 1.1rem;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+.view img {
+  width: 20px;
+  height: auto;
+  margin-left: 1rem;
 }
 
 header {
@@ -249,7 +273,6 @@ header {
   left: 34%;
   width: 130px;
   height: 130px;
-  z-index: -2;
 }
 .quality h1 {
   color: white;
@@ -258,8 +281,52 @@ header {
   margin-bottom: 2rem;
 }
 
-.plate {
+.category {
+  background-image: url("/assets/storage/background-2.jpg");
+  background-color: #F9F5EF;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin-top: 100vh;
+}
+
+.categorysub {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.categories {
+  display: flex;
+  column-gap: 2%;
+  row-gap: 2%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.category-part {
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  height: 170px;
+  width: 150px;
+}
+
+.category-part:hover {
+  background-color: #C8A96A;
+}
+
+.food2 {
+  width: 55px;
+  height: 55px;
+  justify-content: center;
   margin-top: 20px;
+}
+
+.plate {
+  margin-top: 100px;
   background-color: white;
   width: 100%;
   height: 50vh;
@@ -276,7 +343,7 @@ header {
   height: 600px;
   border: 0;
   border-radius: 100%;
-  transform: translateY(-300px);
+  transform: translateY(-350px);
 }
 .plate .eggs {
   width: 400px;
@@ -369,4 +436,116 @@ header {
 }
 .discover:hover {
   transform: scale(0.9);
+
+.offer {
+  margin-top: 120px;
+  background-color: #F9F5EF;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.offer h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.offer h2 {
+  padding: 100px;
+  margin-left: 22%;
+  font-size: 50px;
+}
+.offer h3 {
+  margin-top: -85px;
+  margin-left: 45%;
+  font-size: 20px;
+}
+.offer .menu-bread {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.offer .menu-meat {
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-380px);
+  width: 400px;
+  height: 800px;
+}
+.offer .cart {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 60px 60px 60px 60px;
+  font-size: 20px;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.offer .cart .plat {
+  background-color: white;
+  padding: 30px;
+}
+.offer .cart .plat:hover {
+  border: 3px dashed #C8A96A;
+}
+.offer .cart .plat .desc {
+  font-size: 15px;
+}
+.offer .cart .plat .price {
+  color: #C8A96A;
+  font-size: 40px;
+}
+
+.gallery {
+  margin-top: 120px;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.gallery h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.gallery h2 {
+  padding: 100px;
+  margin-left: 20%;
+  font-size: 50px;
+}
+.gallery h3 {
+  margin-top: -85px;
+  margin-left: 45%;
+  font-size: 20px;
+}
+.gallery .photos {
+  padding: 55px;
+}
+.gallery .photos .row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
+.gallery .photos .row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.gallery .photos img:hover {
+  background-color: black;
+  opacity: 70%;
+
 }/*# sourceMappingURL=styles.css.map */
