@@ -290,10 +290,48 @@ header {
 .offer h2 {
   padding: 120px;
   margin-left: 20%;
-  font-size: 80px;
+  font-size: 70px;
 }
 .offer h3 {
-  margin-top: -45px;
+  margin-top: -85px;
   margin-left: 40%;
-  font-size: 40px;
+  font-size: 30px;
+}
+.offer .menu-bread {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.offer .menu-meat {
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-380px);
+  width: 400px;
+  height: 800px;
+}
+.offer .cart {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 100px 100px 100px 100px;
+  font-size: 25px;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.offer .cart .plat {
+  background-color: white;
+  padding: 30px;
+}
+.offer .cart .plat:hover {
+  border: 3px dashed #C8A96A;
+}
+.offer .cart .plat .desc {
+  font-size: 20px;
+}
+.offer .cart .plat .price {
+  color: #C8A96A;
+  font-size: 45px;
 }/*# sourceMappingURL=styles.css.map */
