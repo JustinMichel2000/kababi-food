@@ -1,7 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.book button {
+  background-color: #C8A96A;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 40px;
+  margin-top: 35px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.book button img {
+  width: 10px;
+  height: 10px;
+  filter: invert(100%);
+}
+.book button:hover {
+  transform: scale(0.9);
+}
+
+.explore {
+  background-color: transparent;
+  color: white;
+  padding: 20px 45px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.explore img {
+  width: 10px;
+  height: 10px;
+  filter: invert(100%);
+}
+.explore:hover {
+  transform: scale(0.9);
+}
+
 header {
-  background-image: url("../../storage/bg-slider1-home.jpg");
+  background-image: linear-gradient(to right, black, transparent), url("/assets/storage/bg-slider1-home.jpg");
   width: 100%;
-  height: 25vh;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  z-index: -2;
 }
 
 .category {
@@ -44,4 +149,125 @@ header {
   height: 55px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.logo {
+  margin-top: 35px;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.menu .large-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  list-style: none;
+  margin-top: 25px;
+}
+.menu .large-menu .small-menu {
+  padding: 2rem 2rem;
+  position: relative;
+}
+.menu .large-menu li {
+  display: inline-block;
+}
+.menu .large-menu li a {
+  text-decoration: none;
+  color: white;
+}
+.menu .large-menu li a:visited {
+  text-decoration: none;
+  color: white;
+}
+.menu .large-menu li a:hover {
+  color: #C8A96A;
+}
+.menu .large-menu .submenu-home, .menu .large-menu .submenu-page, .menu .large-menu .submenu-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  display: none;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+}
+.menu .large-menu .submenu-home li, .menu .large-menu .submenu-page li, .menu .large-menu .submenu-shop li {
+  padding: 0.6rem;
+  background-color: #C8A96A;
+}
+.menu .large-menu .submenu-home li:hover, .menu .large-menu .submenu-page li:hover, .menu .large-menu .submenu-shop li:hover {
+  filter: brightness(90%);
+}
+.menu .large-menu .submenu-home li a:hover, .menu .large-menu .submenu-page li a:hover, .menu .large-menu .submenu-shop li a:hover {
+  color: white;
+}
+.menu .large-menu .home-menu a:focus ~ .submenu-home {
+  display: flex;
+}
+.menu .large-menu .page-menu a:focus ~ .submenu-page {
+  display: flex;
+}
+.menu .large-menu .shop-menu a:focus ~ .submenu-shop {
+  display: flex;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: white;
+  margin-top: 60px;
+}
+.phone .phone-img {
+  width: 25px;
+  height: 25px;
+  transform: translateY(-10px);
+}
+
+.quality {
+  margin-top: 25vh;
+  padding: 0 9rem;
+}
+.quality .img-quality {
+  position: absolute;
+  top: 15%;
+  left: 34%;
+  width: 130px;
+  height: 130px;
+  z-index: -2;
+}
+.quality h1 {
+  color: white;
+  font-size: 100px;
+  max-width: 33%;
+  margin-bottom: 2rem;
+}
+
+.plate {
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.plate .crepes {
+  width: 400px;
+  height: 400px;
+}
+.plate .plate {
+  width: 600px;
+  height: 600px;
+  border: 0;
+  border-radius: 100%;
+  transform: translateY(-300px);
+}
+.plate .eggs {
+  width: 400px;
+  height: 400px;
 }/*# sourceMappingURL=styles.css.map */

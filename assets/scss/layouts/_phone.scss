@@ -1,0 +1,14 @@
+.phone{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: white;
+    margin-top: 60px;
+
+    .phone-img{
+        width: 25px;
+        height: 25px;
+        transform: translateY(-10px);
+    }
+
+}
