@@ -141,59 +141,6 @@ header {
   height: auto;
 }
 
-.category {
-  background-color: #F9F5EF;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  margin-top: 100vh;
-  position: relative;
-  z-index: 1;
-}
-.category h1 {
-  font-size: 180px;
-  color: #C8A96A;
-  opacity: 30%;
-  position: absolute;
-  z-index: -1;
-  margin-top: 40px;
-  margin-left: 20px;
-}
-
-.categorysub {
-  text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.categories {
-  display: flex;
-  -moz-column-gap: 2%;
-       column-gap: 2%;
-  row-gap: 2%;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.category-part {
-  background-color: white;
-  margin: 20px;
-  padding: 10px;
-  height: 170px;
-  width: 150px;
-}
-
-.category-part:hover {
-  background-color: #C8A96A;
-}
-
-.food2 {
-  width: 55px;
-  height: 55px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 .menu .large-menu {
   display: flex;
   flex-direction: row;
@@ -290,6 +237,17 @@ header {
   width: 100%;
   height: 100vh;
   margin-top: 100vh;
+  position: relative;
+  z-index: -1;
+}
+.category h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .categorysub {
@@ -404,8 +362,7 @@ header {
 .about-text {
   flex: 1;
   text-align: left;
-  -moz-column-count: 1;
-       column-count: 1;
+  column-count: 1;
   margin-right: 30%;
   font-size: 18px;
   line-height: 25px;
@@ -436,6 +393,7 @@ header {
 }
 .discover:hover {
   transform: scale(0.9);
+}
 
 .offer {
   margin-top: 120px;
@@ -547,5 +505,4 @@ header {
 .gallery .photos img:hover {
   background-color: black;
   opacity: 70%;
-
 }/*# sourceMappingURL=styles.css.map */
