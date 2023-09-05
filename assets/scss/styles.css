@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +53,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "EB Garamond", serif;
+}
+
 .book button {
   background-color: #C8A96A;
   border: none;
@@ -90,6 +95,25 @@ table {
 }
 .explore:hover {
   transform: scale(0.9);
+}
+
+.view {
+  background-color: white;
+  color: black;
+  font-style: bold;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  margin-top: 35px;
+  font-size: 1.1rem;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+.view img {
+  width: 20px;
+  height: auto;
+  margin-left: 1rem;
 }
 
 header {
@@ -297,7 +321,7 @@ header {
 }
 .offer h3 {
   margin-top: -85px;
-  margin-left: 40%;
+  margin-left: 45%;
   font-size: 20px;
 }
 .offer .menu-bread {
@@ -337,4 +361,50 @@ header {
 .offer .cart .plat .price {
   color: #C8A96A;
   font-size: 40px;
+}
+
+.gallery {
+  margin-top: 120px;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.gallery h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.gallery h2 {
+  padding: 100px;
+  margin-left: 20%;
+  font-size: 50px;
+}
+.gallery h3 {
+  margin-top: -85px;
+  margin-left: 45%;
+  font-size: 20px;
+}
+.gallery .photos {
+  padding: 55px;
+}
+.gallery .photos .row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
+.gallery .photos .row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.gallery .photos img:hover {
+  background-color: black;
+  opacity: 70%;
 }/*# sourceMappingURL=styles.css.map */
