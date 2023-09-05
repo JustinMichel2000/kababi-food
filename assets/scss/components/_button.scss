@@ -44,3 +44,23 @@
         transform: scale(0.9);
     }
 }
+
+.view{
+    background-color: white;
+    color: black;
+    font-style: bold;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    margin-top: 35px;
+    font-size: 1.1rem;
+    margin-left: 40%;
+    margin-top: -2%;
+    
+    img{
+        width: 20px;
+        height: auto;
+        margin-left: 1rem;
+    }
+}
