@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .book button {
   background-color: #C8A96A;
   border: none;
@@ -9,11 +63,15 @@
   padding: 20px 40px;
   margin-top: 35px;
   font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
 }
 .book button img {
   width: 10px;
   height: 10px;
   filter: invert(100%);
+}
+.book button:hover {
+  transform: scale(0.9);
 }
 
 .explore {
@@ -23,11 +81,15 @@
   font-size: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.29);
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
 }
 .explore img {
   width: 10px;
   height: 10px;
   filter: invert(100%);
+}
+.explore:hover {
+  transform: scale(0.9);
 }
 
 header {
@@ -116,12 +178,12 @@ header {
   flex-direction: row;
   gap: 5px;
   color: white;
-  margin-top: 45px;
+  margin-top: 60px;
 }
 .phone .phone-img {
   width: 25px;
   height: 25px;
-  transform: translateY(10px);
+  transform: translateY(-10px);
 }
 
 .quality {
@@ -134,6 +196,7 @@ header {
   left: 34%;
   width: 130px;
   height: 130px;
+  z-index: -2;
 }
 .quality h1 {
   color: white;
@@ -141,3 +204,28 @@ header {
   max-width: 33%;
   margin-bottom: 2rem;
 }
+
+.plate {
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.plate .crepes {
+  width: 400px;
+  height: 400px;
+}
+.plate .plate {
+  width: 600px;
+  height: 600px;
+  border: 0;
+  border-radius: 100%;
+  transform: translateY(-300px);
+}
+.plate .eggs {
+  width: 400px;
+  height: 400px;
+}/*# sourceMappingURL=styles.css.map */
