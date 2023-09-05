@@ -405,9 +405,9 @@ header {
   z-index: 1;
 }
 .offer h1 {
-  font-size: 180px;
+  font-size: 220px;
   color: #C8A96A;
-  opacity: 30%;
+  opacity: 10%;
   position: absolute;
   z-index: -1;
   margin-top: 40px;
@@ -471,9 +471,9 @@ header {
   z-index: 1;
 }
 .gallery h1 {
-  font-size: 180px;
+  font-size: 220px;
   color: #C8A96A;
-  opacity: 30%;
+  opacity: 10%;
   position: absolute;
   z-index: -1;
   margin-top: 40px;
