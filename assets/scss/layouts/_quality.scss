@@ -1,0 +1,19 @@
+.quality{
+    margin-top: 25vh;
+    padding: 0 9rem;
+
+    .img-quality{
+        position: absolute;
+        top: 15%;
+        left: 34%;
+        width: 130px;
+        height: 130px;
+        z-index: -2;
+    }
+    h1{
+        color: white;
+        font-size: 100px;
+        max-width: 33%;
+        margin-bottom: 2rem;
+    }
+}
