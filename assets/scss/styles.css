@@ -264,32 +264,32 @@ header {
   width: 100%;
   height: 100vh;
   margin-top: 20vh;
-  position: relative;
   z-index: -1;
-}
-.category h1 {
-  font-size: 220px;
-  color: #C8A96A;
-  opacity: 10%;
-  position: absolute;
-  z-index: -1;
-  margin-top: 80px;
-  margin-left: 20px;
 }
 
 .categorysub {
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  margin-bottom: 5%;
+  line-height: 50px;
+  margin-top: 15%;
+  position: relative;
 }
 .categorysub h2 {
+  padding-top: 10%;
   font-size: 50px;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 20px;
 }
 .categorysub p {
   font-size: 20px;
+}
+.categorysub::before {
+  content: "CATEGORY";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14rem;
+  margin-top: 10%;
+  color: #C8A96A;
+  opacity: 10%;
 }
 
 .categories {
@@ -297,7 +297,7 @@ header {
   grid-template-columns: repeat(6, 12%);
   text-align: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -312,6 +312,14 @@ header {
 }
 .category-part:hover {
   background-color: #C8A96A;
+  color: white;
+}
+.category-part:hover .arrow {
+  filter: invert(100%);
+}
+.category-part:hover .food2 {
+  filter: grayscale(100%);
+  filter: brightness(100);
 }
 
 .food2 {

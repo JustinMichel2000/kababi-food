@@ -7,43 +7,41 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
-    margin-top: 20vh;
-    position: relative;   
+    margin-top: 20vh; 
     z-index: -1;
-  
-
-    h1{
-        font-size: 220px;
-        color: $--gold;
-        opacity: 10%;
-        position: absolute;
-        z-index: -1;
-        margin-top: 80px;
-        margin-left: 20px;
-    }
+    
   
 }
 
 .categorysub{
 
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
-
+    margin-bottom: 5%;
+    line-height: 50px;
+    margin-top: 15%;
+    position: relative;
+    
     h2{
-
+        padding-top: 10%;
         font-size: 50px;
-        text-align: center;
-        margin-top: 5%;
-        margin-bottom: 20px;
-        
     }
 
     p{
         font-size: 20px;
     }
 
+    &::before{
+
+        content: "CATEGORY";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14rem;
+        margin-top: 10%;
+        color: $--gold;
+        opacity: 10%;
+
+    }
 
 }
 
@@ -53,12 +51,12 @@
     grid-template-columns: repeat(6, 12%);
     text-align: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
    
-}
 
+}
 .category-part {
 
     background-color: white;
@@ -68,15 +66,26 @@
     width: 150px;
     line-height: 35px;
 
- &:hover {
+&:hover {
 
    background-color:$--gold;
-    
+   color: white;
+
+   .arrow{
+
+    filter: invert(100%);
+   }
+
+   .food2{
+
+    filter: grayscale(100%);
+    filter: brightness(100);
+   }
+
+   
 }
 
 }
-    
-
 
 .food2{
 
@@ -90,6 +99,8 @@
 .arrow{
     margin-top: 10px;
     margin-bottom: 10px;
+
+
 }
 
 
