@@ -120,6 +120,27 @@ body {
   transform: scale(0.9);
 }
 
+.discover {
+  background-color: #C8A96A;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 0.7rem;
+  transition: all 0.3s ease-in-out;
+}
+.discover img {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+.discover:hover {
+  transform: scale(0.9);
+}
+
 header {
   background-image: linear-gradient(to right, black, transparent), url("/assets/storage/bg-slider1-home.jpg");
   width: 100%;
@@ -243,31 +264,42 @@ header {
   width: 100%;
   height: 100vh;
   margin-top: 20vh;
-  position: relative;
   z-index: -1;
-}
-.category h1 {
-  font-size: 180px;
-  color: #C8A96A;
-  opacity: 30%;
-  position: absolute;
-  z-index: -1;
-  margin-top: 40px;
-  margin-left: 20px;
 }
 
 .categorysub {
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  margin-bottom: 5%;
+  line-height: 50px;
+  margin-top: 15%;
+  position: relative;
+}
+.categorysub h2 {
+  padding-top: 10%;
+  font-size: 50px;
+}
+.categorysub p {
+  font-size: 20px;
+}
+.categorysub::before {
+  content: "CATEGORY";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14rem;
+  margin-top: 10%;
+  color: #C8A96A;
+  opacity: 10%;
 }
 
 .categories {
-  display: flex;
-  column-gap: 2%;
-  row-gap: 2%;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 12%);
   text-align: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .category-part {
@@ -276,10 +308,18 @@ header {
   padding: 10px;
   height: 170px;
   width: 150px;
+  line-height: 35px;
 }
-
 .category-part:hover {
   background-color: #C8A96A;
+  color: white;
+}
+.category-part:hover .arrow {
+  filter: invert(100%);
+}
+.category-part:hover .food2 {
+  filter: grayscale(100%);
+  filter: brightness(100);
 }
 
 .food2 {
@@ -287,6 +327,11 @@ header {
   height: 55px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.arrow {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .plate {
@@ -315,27 +360,38 @@ header {
 }
 
 .about-us {
-  background-repeat: no-repeat;
+  margin-top: 120px;
   background-color: white;
-  background-size: cover;
-  height: 500px;
-  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
-
-.espaceh2 {
-  margin-top: 10px;
-  margin-bottom: 40px;
+.about-us h1 {
+  font-size: 200px;
+  color: #C8A96A;
+  opacity: 10%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
 }
-
-.about-sub {
+.about-us h2 {
+  padding: 100px;
+  font-size: 50px;
   text-align: center;
 }
-.about-sub img {
+.about-us .text-about-text {
+  margin-top: -85px;
+  margin-left: 45%;
+  font-size: 20px;
+}
+.about-us .best-logo-food {
   position: absolute;
-  right: 5%;
-  bottom: -47%;
-  width: 95px;
-  height: 95px;
+  width: 125px;
+  height: 125px;
+  right: 15%;
+  top: 110px;
 }
 
 .about {
@@ -345,60 +401,29 @@ header {
   text-align: center;
   margin-top: 80px;
 }
-.about img {
-  width: 33%;
-  height: 33%;
-}
 
 .about-content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 800px;
-  width: 100%;
-  gap: 70px;
+  width: 60%;
+  height: 60%;
   margin-left: 20%;
+  margin-top: 80px;
 }
 
 .about-content img {
-  max-width: 50%;
+  max-width: 140%;
 }
 
 .about-text {
-  flex: 1;
   text-align: left;
-  column-count: 1;
-  margin-right: 30%;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 20px;
-}
-.about-text p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.discover {
-  background-color: #C8A96A;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10px 20px;
-  margin-top: 35px;
-  font-size: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-.discover img {
-  width: 10px;
-  height: 10px;
-  filter: invert(100%);
-}
-.discover:hover {
-  transform: scale(0.9);
+  margin-right: 20%;
+  margin-top: 8%;
+  font-size: 25px;
+  line-height: 50px;
+  width: 50%;
 }
 
 .offer {
@@ -559,4 +584,4 @@ header {
 
 .view-button {
   padding: 0 0 7rem 0;
-}
+}/*# sourceMappingURL=styles.css.map */
