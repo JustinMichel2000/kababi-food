@@ -25,20 +25,52 @@
 .categorysub{
 
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    margin-bottom: 5%;
+    line-height: 50px;
+    margin-top: 15%;
+    position: relative;
+    
+    h2{
+        padding-top: 10%;
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    &::before{
+
+        content: "CATEGORY";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14rem;
+        margin-top: 10%;
+        color: $--gold;
+        opacity: 10%;
+
+    }
+
 }
 
 .categories{
 
-    display: flex;
-    column-gap: 2%;
-    row-gap: 2%;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 12%);
     text-align: center;
+
 
 }
 
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+
+
+}
 .category-part {
     
     background-color: white;
@@ -46,6 +78,7 @@
     padding: 10px;
     height: 170px;
     width: 150px;
+
     
     &:hover {
     
@@ -64,6 +97,28 @@
 }
 
 
+    line-height: 35px;
+
+&:hover {
+
+   background-color:$--gold;
+   color: white;
+
+   .arrow{
+
+    filter: invert(100%);
+   }
+
+   .food2{
+
+    filter: grayscale(100%);
+    filter: brightness(100);
+   }
+
+   
+}
+
+}
 
 .food2{
 
@@ -71,5 +126,13 @@
     height: 55px;
     justify-content: center;
     margin-top: 20px;
+
+}
+
+
+.arrow{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
 }
