@@ -1,7 +1,7 @@
 footer{
     background-image: url(/assets/storage/img-ng-footer.jpg);
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     color: white;
 
     .logo-footer{
@@ -18,8 +18,13 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    align-items: center;
     text-align: center;
+    margin-top: 3rem;
+
+    h4{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
 
     a{
         color: white;
@@ -28,6 +33,11 @@ footer{
         &:hover{
             color: $--gold;
         }
+    }
+
+    .about-footer, .facilities-footer, .newsletter-footer,
+    .contact-footer{
+        line-height: 2rem;
     }
 
 }
@@ -44,7 +54,6 @@ hr{
 
     img{
         width: 80px;
-        transform: translateY(-80px);
         
     }
 
