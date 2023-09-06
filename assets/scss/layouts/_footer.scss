@@ -29,6 +29,7 @@ footer{
             color: $--gold;
         }
     }
+
 }
 
 hr{
@@ -36,9 +37,15 @@ hr{
 }
 
 .copyright{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13.1rem;
+    padding: 2rem;
 
     img{
         width: 80px;
+        transform: translateY(-80px);
+        
     }
 
     .themesflat{
