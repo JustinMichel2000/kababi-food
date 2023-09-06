@@ -264,6 +264,15 @@ header {
   width: 100%;
   height: 100vh;
   margin-top: 20vh;
+
+  z-index: -1;
+}
+.category h1 {
+  font-size: 180px;
+  color: #C8A96A;
+  opacity: 10%;
+
+
   z-index: -1;
 }
 
@@ -584,4 +593,85 @@ header {
 
 .view-button {
   padding: 0 0 7rem 0;
+
+}
+
+.chefs {
+  background-image: url(/assets/storage/imgbg-ourchefs.jpg);
+  margin-top: 500px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.chefs h1 {
+  font-size: 220px;
+  color: white;
+  opacity: 10%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.chefs h2 {
+  color: white;
+  padding: 100px;
+  margin-left: 20%;
+  font-size: 50px;
+}
+.chefs h3 {
+  color: white;
+  margin-top: -85px;
+  margin-left: 43%;
+  font-size: 20px;
+}
+.chefs .photo-chef {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 85px;
+}
+
+footer {
+  background-image: url(/assets/storage/img-ng-footer.jpg);
+  width: 100%;
+  height: 60vh;
+  color: white;
+}
+footer .logo-footer {
+  text-align: center;
+}
+footer img {
+  width: 250px;
+  margin-top: 40px;
+}
+
+.menus-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menus-footer a {
+  color: white;
+  text-decoration: none;
+}
+.menus-footer a:hover {
+  color: #C8A96A;
+}
+
+hr {
+  opacity: 10%;
+}
+
+.copyright img {
+  width: 80px;
+}
+.copyright .themesflat {
+  color: #C8A96A;
+}
+
 }/*# sourceMappingURL=styles.css.map */
+
