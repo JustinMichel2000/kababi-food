@@ -286,25 +286,30 @@ header {
   font-size: 50px;
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 20px;
+}
+.categorysub p {
+  font-size: 20px;
 }
 
 .categories {
-  display: flex;
-  -moz-column-gap: 2%;
-       column-gap: 2%;
-  row-gap: 2%;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 12%);
   text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .category-part {
   background-color: white;
   margin: 20px;
   padding: 10px;
-  height: 150px;
+  height: 170px;
   width: 150px;
+  line-height: 35px;
 }
-
 .category-part:hover {
   background-color: #C8A96A;
 }
@@ -314,6 +319,11 @@ header {
   height: 55px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.arrow {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .plate {
@@ -566,4 +576,4 @@ header {
 
 .view-button {
   padding: 0 0 7rem 0;
-}
+}/*# sourceMappingURL=styles.css.map */
