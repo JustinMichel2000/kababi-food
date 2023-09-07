@@ -1,47 +1,156 @@
 footer{
     background-image: url(/assets/storage/img-ng-footer.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     color: white;
 
     .logo-footer{
         text-align: center;
+        
+        img{
+            width: 250px;
+            margin-top: 40px;
+        }
     }
 
-    img{
-        width: 250px;
-        margin-top: 40px;
-    }
 }
 
 .menus-footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    align-items: center;
     text-align: center;
+    margin: 3rem auto 0;
+
+    h4{
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        color: white;
+    }
 
     a{
-        color: white;
+        color: grey;
         text-decoration: none;
 
         &:hover{
             color: $--gold;
         }
+
+        &:visited{
+            color: grey;
+
+            &:hover {
+                color: $--gold;
+            }
+        }
+    }
+
+    .about-footer, .facilities-footer, .newsletter-footer,
+    .contact-footer{
+        margin: 0 auto;
+        text-align: left;
+
+        li{
+            padding: 0.7rem;
+            color: grey;
+        }
+    }
+
+    .newsletter-footer, .contact-footer{
+        width: 70%;
+    }
+
+    input{
+        padding: 0.7rem 1rem;
+    }
+
+    
+}
+
+
+.newsletter-footer {
+
+    .contact-form{
+        display: flex;
+    }
+
+    &li:nth-child(2){
+        line-height: 1.5rem;
     }
 }
 
-hr{
-    opacity: 10%;
+.contact-footer{
+    
+    li{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
 }
 
-.copyright{
+.end {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ffffff36;
+    width: 82%;
+    margin: 2rem auto 0;
 
     img{
-        width: 80px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
     }
 
-    .themesflat{
-        color: $--gold;
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0;
+        width: 50%;
+        font-size: 0.9rem;
+        color: gray;
+    
+        .themesflat{
+            color: $--gold;
+        }
+    }
+
+    .socials {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        .icon {
+            background-color: #333333;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition-duration: 0.6s;
+
+            &:visited {
+                color: inherit;
+            }
+            &:hover {
+                color: white;
+                background-color: $--gold;
+                transition-duration: 0.4s;
+            }
+        }
     }
 }

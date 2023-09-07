@@ -93,6 +93,22 @@
         }
    }
 
+   .submit-button{
+        padding: 1.5rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1;
+        border: none;
+        background-color: $--gold;
+
+        img{
+            margin-top: 0;
+            filter: invert(100%);
+        }
+    }
+
    .read-more{
     background-color: white;
     color: black;
